@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background: url("https://images.unsplash.com/photo-1491183672482-d0af0e44929d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* .about{
+    background: linear-gradient(80deg, rgba(0,0,0,.1), black),url("https://cdn.mos.cms.futurecdn.net/h5NgQEGTcUwAyBzyNJwPue.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+*::selection{
+    background: rgb(220, 20, 60);
+    color: black;
+}
+
+nav a::after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+  border-radius: 2px;
+	background: black;
+	transition: width 0.3s ease-in-out;
+  position: relative;
+  margin: 5px auto;
+}
+
+nav a:hover::after{
+  width: 100%;
+  margin: auto;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+  
+::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: crimson;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 0, 51);
+}
+
+.admin table {
+	border-collapse: collapse;
+	width: 100%;
+	table-layout: fixed;
+}
+
+.admin td {
+	border: 1px solid black;
+	padding: 0.25rem;
+	overflow-x: auto;
+	font-size: 0.7rem;
+}
