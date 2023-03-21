@@ -3,7 +3,7 @@ import questions from "../questions.json";
 import { socket } from "../socket";
 
 const Admin = () => {
-	const NUM_COMPUTERS = 16;
+	const NUM_COMPUTERS = 19;
 
 	function reset() {
 		socket.emit("reset");

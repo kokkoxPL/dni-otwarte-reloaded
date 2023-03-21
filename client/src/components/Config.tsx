@@ -1,7 +1,7 @@
 import { ChangeEvent, useState } from "react";
 
 export default function Config() {
-	const NUM_COMPUTERS = 16;
+	const NUM_COMPUTERS = 19;
 	const [selected, setSelected] = useState(localStorage.getItem("computer") || 0);
 
 	function changeSelected(e: ChangeEvent<HTMLSelectElement>) {
