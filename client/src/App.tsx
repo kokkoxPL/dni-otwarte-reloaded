@@ -7,6 +7,7 @@ import Quiz from './components/Quiz';
 import Footer from './components/Footer';
 import Config from './components/Config';
 import Admin from './components/Admin';
+import Results from './components/Results';
 
 const App = () => {
   return (
@@ -16,9 +17,10 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/quiz" element={<Quiz />} />
-				  <Route path="/config" element={<Config />} />
-				  <Route path="/edgar" element={<Admin />} />
-        </Routes>
+          <Route path="/config" element={<Config />} />
+          <Route path="/results" element={<Results />} />
+          <Route path="/edgar" element={<Admin />} />
+          </Routes>
         <Footer />
       </BrowserRouter>
     </>

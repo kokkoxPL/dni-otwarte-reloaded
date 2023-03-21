@@ -17,7 +17,7 @@ const BannerAnimation = () =>{
                 .to(Ibox, {borderWidth:'2px', borderColor:'black', borderStyle:'solid'})
                 .to(Ibox[0], {y:'-200px', delay:.1}, 'show')
                 .to(Ibox[1], {y:'200px', delay:.1}, 'show')
-            .addLabel('move')
+            // .addLabel('move')
                 .to(Ibox[0], {x:'200px'}, 'move')
                 .to(Ibox[1], {x:'-200px'}, 'move')
             .addLabel('hide')
@@ -37,14 +37,14 @@ const BannerAnimation = () =>{
     return(
         <div className="boxes w-[80%] flex m-auto relative">
                 <div className="box border-[2px] border-black w-[200px] h-[200px] relative left-[200px]">
-                    <div className="Ibox border-[2px] border-black w-[200px] h-[200px] absolute top-0 left-0 my-auto">
+                    <div className="Ibox border-[2px] border-black w-[200px] h-[200px] absolute top-0 left-0 my-auto m-[2px]">
                     </div>
                 </div>
                     <div className="box border-[2px] border-black w-[200px] h-[200px] overflow-hidden m-[2px]">
                         <div className="bgB w-[220px] h-[220px] bg-black"></div>
                 </div>
              <div className="box border-[2px] border-black w-[200px] h-[200px] relative left-[-200px]">
-                    <div className="Ibox border-[2px] border-black w-[200px] h-[200px] absolute top-0 left-0 my-auto">
+                    <div className="Ibox border-[2px] border-black w-[200px] h-[200px] absolute top-0 left-0 my-auto m-[2px]">
 
                 </div>
              </div>

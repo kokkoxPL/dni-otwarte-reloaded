@@ -11,14 +11,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
-
-/* .about{
-    background: linear-gradient(80deg, rgba(0,0,0,.1), black),url("https://cdn.mos.cms.futurecdn.net/h5NgQEGTcUwAyBzyNJwPue.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-} */
 
 *::selection{
     background: rgb(220, 20, 60);

@@ -36,7 +36,7 @@ const Banner =()=>{
                 repeat={Infinity}
                 className='text-[60px] text-red-800 text-center w-full animation font-orbitron font-extralight'
             />
-            <p className=' text-[20px] text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id consectetur molestias tempore omnis. Sed cumque totam ipsam fuga in fugit!
+            <p className=' text-[25px] font-gruppo font-extrabold'><span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-red-600 font-orbitron font-bold">"Sapere Aude"</span>- Odważ się być mądrym
             </p>
             <h1 onClick={offers} className="text-[30px] font-orbitron text-transparent bg-clip-text bg-gradient-to-r from-red-900 to-pink-600 cursor-pointer p-[10px] hover:bg-gradient-to hover:from-fuchsia-700 hover:to-[crimson]">Oferta na rok 2023/2024</h1>
 

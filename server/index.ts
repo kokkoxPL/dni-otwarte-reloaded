@@ -7,7 +7,7 @@ const app: Express = express();
 const server = http.createServer(app)
 
 const db = new JsonDB(new Config("results", true, false, "/"));
-const io = new Server(server, {cors: {origin: "http://localhost:5173",},});
+const io = new Server(server, {cors: {origin: "http://:3000",},});
 
 io.on("connection", (socket) => {
 	console.log("a user connected");
@@ -18,8 +18,7 @@ io.on("connection", (socket) => {
 		io.emit("computer_disconnected", computerNumber);
 	});
 
-	socket.on("computer_connected", (which) => {
-		console.log("test");
+	socket.on("computer_connected", (which: number) => {
 		io.emit("computer_connected", which);
 		computerNumber = which;
 	});
@@ -52,13 +51,13 @@ io.on("connection", (socket) => {
 		io.emit("city", city, computerNumber);
 	});
 		
-	socket.on("save", async (name, result) => {
+	socket.on("save_results", async (name, result) => {
 		await db.push("/results[]", { name, result }, true);
 		const results = await db.getData("/results");
 		io.emit("results", results);
 	});
 
-	socket.on("get", async () => {
+	socket.on("get_results", async () => {
 		const results = await db.getData("/results");
 		socket.emit("results", results);
 	});
@@ -69,4 +68,4 @@ io.on("connection", (socket) => {
 	});
 })
 
-server.listen("4000", () => console.log("running server on http://localhost:4000"))
+server.listen(4000, "0.0.0.0", () => console.log("test"))

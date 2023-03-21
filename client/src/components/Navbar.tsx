@@ -22,7 +22,7 @@ const Navbar =()=>{
         },
     ]
     return(
-        <nav className='navbar w-[100%] bg-red-800 text-white fixed top-0 font-gruppo text-[20px] h-[60px] z-50'>
+        <nav className='navbar w-[100%] bg-red-700 text-white fixed top-0 font-gruppo text-[20px] h-[60px] z-50'>
             <ul className='flex justify-center'>
                 {navigation.map((element, index)=>{
                     return(
